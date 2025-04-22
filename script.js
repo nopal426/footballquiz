@@ -89,7 +89,6 @@ function nextQuestion() {
 }
 
 function prevQuestion() {
-  clearInterval(timer);
   if (currentQuestion > 0) {
     currentQuestion--;
     loadQuestion();
@@ -102,11 +101,14 @@ function endQuiz() {
   answers.forEach((ans, i) => {
     if (ans === questions[i].answer) score++;
   });
+
   document.getElementById("quizScreen").style.display = "none";
   document.getElementById("resultScreen").style.display = "block";
   document.getElementById("score").innerText = `Hey ${player}, you scored ${score} out of ${questions.length}`;
+
   saveToLeaderboard(player, score);
   showLeaderboard();
+  showReview();
 }
 
 function restartQuiz() {
@@ -132,5 +134,26 @@ function showLeaderboard() {
     const li = document.createElement("li");
     li.textContent = `${i + 1}. ${entry.name} - ${entry.score}`;
     list.appendChild(li);
+  });
+}
+
+function showReview() {
+  const reviewDiv = document.getElementById("reviewList");
+  reviewDiv.innerHTML = "";
+
+  questions.forEach((q, i) => {
+    const userAnswer = answers[i];
+    const isCorrect = userAnswer === q.answer;
+
+    const div = document.createElement("div");
+    div.className = "review-card";
+    div.innerHTML = `
+      <p><strong>Q${i + 1}: ${q.question}</strong></p>
+      <p>Your Answer: <span class="${isCorrect ? 'correct' : 'wrong'}">
+        ${userAnswer !== null ? q.options[userAnswer] : 'No answer'}
+      </span></p>
+      ${!isCorrect ? `<p>Correct Answer: <span class="correct">${q.options[q.answer]}</span></p>` : ''}
+    `;
+    reviewDiv.appendChild(div);
   });
 }
