@@ -1,108 +1,51 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
 }
 
 .container {
+  background-color: rgba(0, 0, 50, 0.8);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
   max-width: 500px;
-  margin: 50px auto;
-  background: rgba(0, 0, 50, 0.8);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 170, 255, 0.5);
   text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-input[type="text"] {
-  width: 100%;
+input, select, button {
   padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  border: none;
+  margin: 10px 0;
+  width: 100%;
   font-size: 16px;
+  border: none;
+  border-radius: 8px;
 }
 
 button {
-  background-color: #00aaff;
-  border: none;
+  background-color: #3498db;
   color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 16px;
   cursor: pointer;
-  margin: 10px 5px 0;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #0088cc;
-  transform: scale(1.05);
-}
-
-.question {
-  font-size: 18px;
-  margin-bottom: 15px;
+  background-color: #2980b9;
 }
 
 .option {
-  display: block;
-  background-color: #1b2a41;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.option:hover:not(:disabled) {
-  background-color: #00aaff;
+  background-color: white;
+  color: #333;
+  margin: 5px;
 }
 
 .option.selected {
-  background-color: #0077cc;
-}
-
-.option:disabled {
-  opacity: 0.6;
-  cursor: default;
-}
-
-#timer {
-  font-size: 20px;
-  font-weight: bold;
-  color: #00ffcc;
-  margin-bottom: 10px;
-}
-
-#leaderboardList li {
-  text-align: left;
-  margin-bottom: 5px;
-}
-
-#reviewAnswers {
-  margin-top: 30px;
-  text-align: left;
-}
-
-.review-card {
-  background: #1a2b4c;
-  border-left: 5px solid #00aaff;
-  margin-bottom: 15px;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.correct {
-  color: #00ff99;
-  font-weight: bold;
-}
-
-.wrong {
-  color: #ff5555;
-  font-weight: bold;
+  background-color: #3498db;
+  color: white;
 }
