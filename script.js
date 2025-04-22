@@ -89,6 +89,7 @@ function nextQuestion() {
 }
 
 function prevQuestion() {
+  clearInterval(timer);
   if (currentQuestion > 0) {
     currentQuestion--;
     loadQuestion();
