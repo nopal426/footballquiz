@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Football Quiz</title>
+  <title>Quiz Game</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container" id="loginScreen">
-    <h2>Football Quiz</h2>
+    <h2>Multi-Category Quiz</h2>
     <input type="text" id="playerName" placeholder="Enter your name" />
+    <select id="category">
+      <option value="football">Football</option>
+    </select>
+    <select id="language">
+      <option value="id">Bahasa Indonesia</option>
+      <option value="en">English</option>
+    </select>
     <button onclick="startQuiz()">Start</button>
   </div>
 
@@ -19,29 +25,16 @@
     <div id="question" class="question"></div>
     <div id="options"></div>
     <div class="nav-buttons">
-      <button onclick="prevQuestion()">Back</button>
-      <button onclick="nextQuestion()">Next</button>
+      <button onclick="prevQuestion()" id="btnBack">Back</button>
+      <button onclick="nextQuestion()" id="btnNext">Next</button>
     </div>
   </div>
 
   <div class="container" id="resultScreen" style="display:none;">
-    <h2>Quiz Finished!</h2>
+    <h2 id="resultTitle">Quiz Finished!</h2>
     <p id="score"></p>
-    <button onclick="restartQuiz()">Play Again</button>
-
-    <div id="leaderboard">
-      <h3>Leaderboard</h3>
-      <ul id="leaderboardList"></ul>
-    </div>
-
-    <div id="reviewAnswers">
-      <h3>Review Your Answers</h3>
-      <div id="reviewList"></div>
-    </div>
+    <button onclick="restartQuiz()" id="btnRestart">Play Again</button>
   </div>
-
-  <audio id="correctSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_977fa63f49.mp3"></audio>
-  <audio id="wrongSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_c8edb9b690.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
