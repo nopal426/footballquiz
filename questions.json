@@ -1,0 +1,74 @@
+{
+  "football_id": [
+    {
+      "question": "Klub mana yang paling banyak juara Liga Champions?",
+      "options": ["Barcelona", "Liverpool", "AC Milan", "Real Madrid"],
+      "answer": 3
+    },
+    {
+      "question": "Siapa yang memenangkan Ballon d'Or 2022?",
+      "options": ["Messi", "Lewandowski", "Benzema", "Ronaldo"],
+      "answer": 2
+    }
+  ],
+  "football_en": [
+    {
+      "question": "Which club has the most Champions League titles?",
+      "options": ["Barcelona", "Liverpool", "AC Milan", "Real Madrid"],
+      "answer": 3
+    },
+    {
+      "question": "Who won the 2022 Ballon d'Or?",
+      "options": ["Messi", "Lewandowski", "Benzema", "Ronaldo"],
+      "answer": 2
+    }
+  ],
+  "math_id": [
+    {
+      "question": "Berapa hasil dari 12 x 12?",
+      "options": ["144", "124", "112", "132"],
+      "answer": 0
+    },
+    {
+      "question": "Hasil dari 50 + 25?",
+      "options": ["75", "80", "70", "85"],
+      "answer": 0
+    }
+  ],
+  "math_en": [
+    {
+      "question": "What is the result of 12 x 12?",
+      "options": ["144", "124", "112", "132"],
+      "answer": 0
+    },
+    {
+      "question": "What is the result of 50 + 25?",
+      "options": ["75", "80", "70", "85"],
+      "answer": 0
+    }
+  ],
+  "science_id": [
+    {
+      "question": "Apa unsur kimia yang memiliki simbol H?",
+      "options": ["Hidrogen", "Helium", "Oksigen", "Karbon"],
+      "answer": 0
+    },
+    {
+      "question": "Apa nama planet terdekat dengan Matahari?",
+      "options": ["Merkurius", "Venus", "Bumi", "Mars"],
+      "answer": 0
+    }
+  ],
+  "science_en": [
+    {
+      "question": "What chemical element has the symbol H?",
+      "options": ["Hydrogen", "Helium", "Oxygen", "Carbon"],
+      "answer": 0
+    },
+    {
+      "question": "What is the closest planet to the Sun?",
+      "options": ["Mercury", "Venus", "Earth", "Mars"],
+      "answer": 0
+    }
+  ]
+}
