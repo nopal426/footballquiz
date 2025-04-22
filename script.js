@@ -1,138 +1,51 @@
-let allQuestions = {};
-
-async function fetchQuestions() {
-  const res = await fetch("questions.json");
-  allQuestions = await res.json();
-}
-
-const langText = {
-  id: {
-    start: "Mulai",
-    back: "Kembali",
-    next: "Lanjut",
-    finished: "Quiz Selesai!",
-    playAgain: "Main Lagi",
-    time: "Waktu"
-  },
-  en: {
-    start: "Start",
-    back: "Back",
-    next: "Next",
-    finished: "Quiz Finished!",
-    playAgain: "Play Again",
-    time: "Time"
-  }
+const loadQuestions = async (category, language) => {
+    const response = await fetch('questions.json');
+    const data = await response.json();
+    return data[category][language];
 };
 
-let questions = [];
-let currentQuestion = 0;
-let answers = [];
+let currentQuestionIndex = 0;
 let score = 0;
-let timer;
-let timeLeft = 15;
-let player = "";
-let language = "en";
 
-async function startQuiz() {
-  const nameInput = document.getElementById("playerName").value.trim();
-  const category = document.getElementById("category").value;
-  language = document.getElementById("language").value;
+let currentQuestions = [];
+const startGame = async () => {
+    const selectedCategory = 'football'; 
+    const selectedLanguage = 'en'; 
+    currentQuestions = await loadQuestions(selectedCategory, selectedLanguage);
+    displayQuestion();
+};
 
-  if (!nameInput) return alert(language === "id" ? "Masukkan nama!" : "Enter your name!");
+const displayQuestion = () => {
+    const questionData = currentQuestions[currentQuestionIndex];
+    document.getElementById('question').textContent = questionData.question;
+  
+    const options = document.getElementById('options');
+    options.innerHTML = '';
+    questionData.options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.onclick = () => checkAnswer(index);
+        options.appendChild(button);
+    });
+};
 
-  player = nameInput;
-  await fetchQuestions();
-  questions = allQuestions[`${category}_${language}`];
-  if (!questions) return alert("No questions found for this category/language.");
+const checkAnswer = (selectedIndex) => {
+    const correctAnswer = currentQuestions[currentQuestionIndex].answer;
+    if (selectedIndex === correctAnswer) {
+        score++;
+    }
+    currentQuestionIndex++;
+    if (currentQuestionIndex < currentQuestions.length) {
+        displayQuestion();
+    } else {
+        showScore();
+    }
+};
 
-  answers = Array(questions.length).fill(null);
-  currentQuestion = 0;
+const showScore = () => {
+    document.getElementById('quiz-container').style.display = 'none';
+    document.getElementById('score-container').style.display = 'block';
+    document.getElementById('score').textContent = `Your score: ${score}`;
+};
 
-  updateLanguageUI();
-  document.getElementById("loginScreen").style.display = "none";
-  document.getElementById("quizScreen").style.display = "block";
-
-  loadQuestion();
-}
-
-function updateLanguageUI() {
-  const lang = langText[language];
-  document.getElementById("btnBack").innerText = lang.back;
-  document.getElementById("btnNext").innerText = lang.next;
-  document.getElementById("btnRestart").innerText = lang.playAgain;
-  document.getElementById("resultTitle").innerText = lang.finished;
-}
-
-function loadQuestion() {
-  clearInterval(timer);
-  timeLeft = 15;
-  document.getElementById("timer").textContent = `${langText[language].time}: ${timeLeft}`;
-  timer = setInterval(updateTimer, 1000);
-
-  const q = questions[currentQuestion];
-  document.getElementById("question").innerText = q.question;
-  const optionsDiv = document.getElementById("options");
-  optionsDiv.innerHTML = "";
-
-  q.options.forEach((opt, i) => {
-    const btn = document.createElement("button");
-    btn.innerText = opt;
-    btn.className = "option";
-    if (answers[currentQuestion] === i) btn.classList.add("selected");
-    btn.onclick = () => selectAnswer(i);
-    optionsDiv.appendChild(btn);
-  });
-}
-
-function updateTimer() {
-  timeLeft--;
-  document.getElementById("timer").textContent = `${langText[language].time}: ${timeLeft}`;
-  if (timeLeft <= 0) {
-    clearInterval(timer);
-    nextQuestion();
-  }
-}
-
-function selectAnswer(i) {
-  answers[currentQuestion] = i;
-  document.querySelectorAll(".option").forEach(btn => btn.classList.remove("selected"));
-  document.querySelectorAll(".option")[i].classList.add("selected");
-}
-
-function nextQuestion() {
-  clearInterval(timer);
-  if (currentQuestion < questions.length - 1) {
-    currentQuestion++;
-    loadQuestion();
-  } else {
-    endQuiz();
-  }
-}
-
-function prevQuestion() {
-  clearInterval(timer);
-  if (currentQuestion > 0) {
-    currentQuestion--;
-    loadQuestion();
-  }
-}
-
-function endQuiz() {
-  clearInterval(timer);
-  score = 0;
-  answers.forEach((ans, i) => {
-    if (ans === questions[i].answer) score++;
-  });
-
-  document.getElementById("quizScreen").style.display = "none";
-  document.getElementById("resultScreen").style.display = "block";
-  document.getElementById("score").innerText = `${player}, ${language === 'id' ? 'skor kamu' : 'your score'}: ${score}/${questions.length}`;
-}
-
-function restartQuiz() {
-  currentQuestion = 0;
-  score = 0;
-  answers = [];
-  document.getElementById("resultScreen").style.display = "none";
-  document.getElementById("loginScreen").style.display = "block";
-}
+startGame();
