@@ -39,10 +39,25 @@ button:hover {
   background-color: #2980b9;
 }
 
+select {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+option {
+  color: #333;
+}
+
 .option {
   background-color: white;
   color: #333;
   margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .option.selected {
