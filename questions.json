@@ -1,160 +1,156 @@
-const questions = {
-  football: {
-    en: [
-      {
-        question: "Who won the 2018 FIFA World Cup?",
-        options: ["Germany", "Brazil", "France", "Argentina"],
-        answer: 2
-      },
-      {
-        question: "Which country is known as the birthplace of football?",
-        options: ["Brazil", "England", "Germany", "Italy"],
-        answer: 1
-      },
-      {
-        question: "Who is the all-time top scorer in the Premier League?",
-        options: ["Wayne Rooney", "Sergio Agüero", "Harry Kane", "Alan Shearer"],
-        answer: 3
-      },
-      {
-        question: "How many players are there in a football team?",
-        options: ["9", "10", "11", "12"],
-        answer: 2
-      },
-      {
-        question: "Which player has won the most Ballon d'Or awards?",
-        options: ["Cristiano Ronaldo", "Zinedine Zidane", "Lionel Messi", "Ronaldinho"],
-        answer: 2
-      },
-      {
-        question: "What is the maximum duration of a football match (excluding extra time)?",
-        options: ["80 minutes", "90 minutes", "100 minutes", "70 minutes"],
-        answer: 1
-      },
-      {
-        question: "Which club has won the most UEFA Champions League titles?",
-        options: ["Barcelona", "Bayern Munich", "AC Milan", "Real Madrid"],
-        answer: 3
-      },
-      {
-        question: "In which year was the first World Cup held?",
-        options: ["1930", "1950", "1920", "1940"],
-        answer: 0
-      },
-      {
-        question: "Which country hosted the 2022 FIFA World Cup?",
-        options: ["Qatar", "Russia", "USA", "Japan"],
-        answer: 0
-      },
-      {
-        question: "What is the name of the international football body?",
-        options: ["FIBA", "FIFA", "IOC", "UCL"],
-        answer: 1
-      },
-      {
-        question: "Which country has the most World Cup wins?",
-        options: ["Germany", "Brazil", "Italy", "Argentina"],
-        answer: 1
-      },
-      {
-        question: "Who won the Golden Boot in World Cup 2022?",
-        options: ["Messi", "Mbappé", "Ronaldo", "Griezmann"],
-        answer: 1
-      },
-      {
-        question: "Which footballer is known as 'The Egyptian King'?",
-        options: ["Elneny", "Mahrez", "Salah", "Mido"],
-        answer: 2
-      },
-      {
-        question: "Which stadium is the home of Manchester United?",
-        options: ["Anfield", "Etihad Stadium", "Old Trafford", "Stamford Bridge"],
-        answer: 2
-      },
-      {
-        question: "Who won UEFA Euro 2020?",
-        options: ["France", "England", "Italy", "Portugal"],
-        answer: 2
-      }
-    ],
-    id: [
-      {
-        question: "Siapa yang memenangkan Piala Dunia FIFA 2018?",
-        options: ["Jerman", "Brasil", "Prancis", "Argentina"],
-        answer: 2
-      },
-      {
-        question: "Negara manakah yang dikenal sebagai tempat kelahiran sepak bola?",
-        options: ["Brasil", "Inggris", "Jerman", "Italia"],
-        answer: 1
-      },
-      {
-        question: "Siapa pencetak gol terbanyak sepanjang masa di Premier League?",
-        options: ["Wayne Rooney", "Sergio Agüero", "Harry Kane", "Alan Shearer"],
-        answer: 3
-      },
-      {
-        question: "Berapa jumlah pemain dalam satu tim sepak bola?",
-        options: ["9", "10", "11", "12"],
-        answer: 2
-      },
-      {
-        question: "Pemain mana yang paling banyak memenangkan Ballon d'Or?",
-        options: ["Cristiano Ronaldo", "Zinedine Zidane", "Lionel Messi", "Ronaldinho"],
-        answer: 2
-      },
-      {
-        question: "Berapa durasi maksimal pertandingan sepak bola (tanpa tambahan waktu)?",
-        options: ["80 menit", "90 menit", "100 menit", "70 menit"],
-        answer: 1
-      },
-      {
-        question: "Klub mana yang paling banyak memenangkan Liga Champions UEFA?",
-        options: ["Barcelona", "Bayern Munich", "AC Milan", "Real Madrid"],
-        answer: 3
-      },
-      {
-        question: "Tahun berapa Piala Dunia pertama kali diadakan?",
-        options: ["1930", "1950", "1920", "1940"],
-        answer: 0
-      },
-      {
-        question: "Negara mana yang menjadi tuan rumah Piala Dunia 2022?",
-        options: ["Qatar", "Rusia", "AS", "Jepang"],
-        answer: 0
-      },
-      {
-        question: "Apa nama badan sepak bola internasional?",
-        options: ["FIBA", "FIFA", "IOC", "UCL"],
-        answer: 1
-      },
-      {
-        question: "Negara mana yang paling banyak memenangkan Piala Dunia?",
-        options: ["Jerman", "Brasil", "Italia", "Argentina"],
-        answer: 1
-      },
-      {
-        question: "Siapa pencetak gol terbanyak Piala Dunia 2022?",
-        options: ["Messi", "Mbappé", "Ronaldo", "Griezmann"],
-        answer: 1
-      },
-      {
-        question: "Pemain mana yang dijuluki 'Raja Mesir'?",
-        options: ["Elneny", "Mahrez", "Salah", "Mido"],
-        answer: 2
-      },
-      {
-        question: "Stadion manakah yang menjadi markas Manchester United?",
-        options: ["Anfield", "Etihad Stadium", "Old Trafford", "Stamford Bridge"],
-        answer: 2
-      },
-      {
-        question: "Siapa yang memenangkan UEFA Euro 2020?",
-        options: ["Prancis", "Inggris", "Italia", "Portugal"],
-        answer: 2
-      }
-    ]
-  }
-};
-
-
+{
+  "football_en": [
+    {
+      "question": "Who won the 2018 FIFA World Cup?",
+      "options": ["Germany", "Brazil", "France", "Argentina"],
+      "answer": 2
+    },
+    {
+      "question": "Which country is known as the birthplace of football?",
+      "options": ["Brazil", "England", "Germany", "Italy"],
+      "answer": 1
+    },
+    {
+      "question": "Who is the all-time top scorer in the Premier League?",
+      "options": ["Wayne Rooney", "Sergio Agüero", "Harry Kane", "Alan Shearer"],
+      "answer": 3
+    },
+    {
+      "question": "How many players are there in a football team?",
+      "options": ["9", "10", "11", "12"],
+      "answer": 2
+    },
+    {
+      "question": "Which player has won the most Ballon d'Or awards?",
+      "options": ["Cristiano Ronaldo", "Zinedine Zidane", "Lionel Messi", "Ronaldinho"],
+      "answer": 2
+    },
+    {
+      "question": "What is the maximum duration of a football match (excluding extra time)?",
+      "options": ["80 minutes", "90 minutes", "100 minutes", "70 minutes"],
+      "answer": 1
+    },
+    {
+      "question": "Which club has won the most UEFA Champions League titles?",
+      "options": ["Barcelona", "Bayern Munich", "AC Milan", "Real Madrid"],
+      "answer": 3
+    },
+    {
+      "question": "In which year was the first World Cup held?",
+      "options": ["1930", "1950", "1920", "1940"],
+      "answer": 0
+    },
+    {
+      "question": "Which country hosted the 2022 FIFA World Cup?",
+      "options": ["Qatar", "Russia", "USA", "Japan"],
+      "answer": 0
+    },
+    {
+      "question": "What is the name of the international football body?",
+      "options": ["FIBA", "FIFA", "IOC", "UCL"],
+      "answer": 1
+    },
+    {
+      "question": "Which country has the most World Cup wins?",
+      "options": ["Germany", "Brazil", "Italy", "Argentina"],
+      "answer": 1
+    },
+    {
+      "question": "Who won the Golden Boot in World Cup 2022?",
+      "options": ["Messi", "Mbappé", "Ronaldo", "Griezmann"],
+      "answer": 1
+    },
+    {
+      "question": "Which footballer is known as 'The Egyptian King'?",
+      "options": ["Elneny", "Mahrez", "Salah", "Mido"],
+      "answer": 2
+    },
+    {
+      "question": "Which stadium is the home of Manchester United?",
+      "options": ["Anfield", "Etihad Stadium", "Old Trafford", "Stamford Bridge"],
+      "answer": 2
+    },
+    {
+      "question": "Who won UEFA Euro 2020?",
+      "options": ["France", "England", "Italy", "Portugal"],
+      "answer": 2
+    }
+  ],
+  "football_id": [
+    {
+      "question": "Siapa yang memenangkan Piala Dunia FIFA 2018?",
+      "options": ["Jerman", "Brasil", "Prancis", "Argentina"],
+      "answer": 2
+    },
+    {
+      "question": "Negara manakah yang dikenal sebagai tempat kelahiran sepak bola?",
+      "options": ["Brasil", "Inggris", "Jerman", "Italia"],
+      "answer": 1
+    },
+    {
+      "question": "Siapa pencetak gol terbanyak sepanjang masa di Premier League?",
+      "options": ["Wayne Rooney", "Sergio Agüero", "Harry Kane", "Alan Shearer"],
+      "answer": 3
+    },
+    {
+      "question": "Berapa jumlah pemain dalam satu tim sepak bola?",
+      "options": ["9", "10", "11", "12"],
+      "answer": 2
+    },
+    {
+      "question": "Pemain mana yang paling banyak memenangkan Ballon d'Or?",
+      "options": ["Cristiano Ronaldo", "Zinedine Zidane", "Lionel Messi", "Ronaldinho"],
+      "answer": 2
+    },
+    {
+      "question": "Berapa durasi maksimal pertandingan sepak bola (tanpa tambahan waktu)?",
+      "options": ["80 menit", "90 menit", "100 menit", "70 menit"],
+      "answer": 1
+    },
+    {
+      "question": "Klub mana yang paling banyak memenangkan Liga Champions UEFA?",
+      "options": ["Barcelona", "Bayern Munich", "AC Milan", "Real Madrid"],
+      "answer": 3
+    },
+    {
+      "question": "Tahun berapa Piala Dunia pertama kali diadakan?",
+      "options": ["1930", "1950", "1920", "1940"],
+      "answer": 0
+    },
+    {
+      "question": "Negara mana yang menjadi tuan rumah Piala Dunia 2022?",
+      "options": ["Qatar", "Rusia", "AS", "Jepang"],
+      "answer": 0
+    },
+    {
+      "question": "Apa nama badan sepak bola internasional?",
+      "options": ["FIBA", "FIFA", "IOC", "UCL"],
+      "answer": 1
+    },
+    {
+      "question": "Negara mana yang paling banyak memenangkan Piala Dunia?",
+      "options": ["Jerman", "Brasil", "Italia", "Argentina"],
+      "answer": 1
+    },
+    {
+      "question": "Siapa pencetak gol terbanyak Piala Dunia 2022?",
+      "options": ["Messi", "Mbappé", "Ronaldo", "Griezmann"],
+      "answer": 1
+    },
+    {
+      "question": "Pemain mana yang dijuluki 'Raja Mesir'?",
+      "options": ["Elneny", "Mahrez", "Salah", "Mido"],
+      "answer": 2
+    },
+    {
+      "question": "Stadion manakah yang menjadi markas Manchester United?",
+      "options": ["Anfield", "Etihad Stadium", "Old Trafford", "Stamford Bridge"],
+      "answer": 2
+    },
+    {
+      "question": "Siapa yang memenangkan UEFA Euro 2020?",
+      "options": ["Prancis", "Inggris", "Italia", "Portugal"],
+      "answer": 2
+    }
+  ]
+}
