@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Football Quiz</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +18,10 @@
     <div id="timer">Time: 15</div>
     <div id="question" class="question"></div>
     <div id="options"></div>
-    <button onclick="nextQuestion()">Next</button>
+    <div class="nav-buttons">
+      <button onclick="prevQuestion()">Back</button>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
   </div>
 
   <div class="container" id="resultScreen" style="display:none;">
