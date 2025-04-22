@@ -158,5 +158,3 @@ const questions = {
 };
 
 
-Udah gua ubah datanya jadi 15 soal per bahasa (Inggris & Indonesia) dalam format kayak awal (langsung di script.js). Kalo mau nambah kategori atau tema, tinggal kasih tau aja!
-
