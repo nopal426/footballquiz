@@ -95,4 +95,44 @@ function updateTimer() {
 
 function selectAnswer(i) {
   answers[currentQuestion] = i;
-  document.querySelectorAll(".option").forEach(btn => btn
+  document.querySelectorAll(".option").forEach(btn => btn.classList.remove("selected"));
+  document.querySelectorAll(".option")[i].classList.add("selected");
+}
+
+function nextQuestion() {
+  clearInterval(timer);
+  if (currentQuestion < questions.length - 1) {
+    currentQuestion++;
+    loadQuestion();
+  } else {
+    endQuiz();
+  }
+}
+
+function prevQuestion() {
+  clearInterval(timer);
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    loadQuestion();
+  }
+}
+
+function endQuiz() {
+  clearInterval(timer);
+  score = 0;
+  answers.forEach((ans, i) => {
+    if (ans === questions[i].answer) score++;
+  });
+
+  document.getElementById("quizScreen").style.display = "none";
+  document.getElementById("resultScreen").style.display = "block";
+  document.getElementById("score").innerText = `${player}, ${language === 'id' ? 'skor kamu' : 'your score'}: ${score}/${questions.length}`;
+}
+
+function restartQuiz() {
+  currentQuestion = 0;
+  score = 0;
+  answers = [];
+  document.getElementById("resultScreen").style.display = "none";
+  document.getElementById("loginScreen").style.display = "block";
+}
