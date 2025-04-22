@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container" id="loginScreen">
-    <h2>Football Quiz</h2>
+    <h2 class="title">Football Quiz</h2>
     <input type="text" id="playerName" placeholder="Enter your name" />
     <select id="category">
       <option value="football">Football</option>
@@ -17,7 +17,7 @@
       <option value="id">Bahasa Indonesia</option>
       <option value="en">English</option>
     </select>
-    <button onclick="startQuiz()">Start</button>
+    <button class="btn" onclick="startQuiz()">Start</button>
   </div>
 
   <div class="container" id="quizScreen" style="display:none;">
@@ -25,15 +25,15 @@
     <div id="question" class="question"></div>
     <div id="options"></div>
     <div class="nav-buttons">
-      <button onclick="prevQuestion()" id="btnBack">Back</button>
-      <button onclick="nextQuestion()" id="btnNext">Next</button>
+      <button class="btn back-btn" onclick="prevQuestion()" id="btnBack">Back</button>
+      <button class="btn next-btn" onclick="nextQuestion()" id="btnNext">Next</button>
     </div>
   </div>
 
   <div class="container" id="resultScreen" style="display:none;">
     <h2 id="resultTitle">Quiz Finished!</h2>
     <p id="score"></p>
-    <button onclick="restartQuiz()" id="btnRestart">Play Again</button>
+    <button class="btn restart-btn" onclick="restartQuiz()" id="btnRestart">Play Again</button>
   </div>
 
   <script src="script.js"></script>
