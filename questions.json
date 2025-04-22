@@ -1,156 +1,157 @@
 {
   "football_id": [
     {
-      "question": "Klub mana yang paling banyak juara Liga Champions?",
-      "options": ["Barcelona", "Liverpool", "AC Milan", "Real Madrid"],
-      "answer": 3
+      "question": "Siapa yang mencetak gol terbanyak dalam sejarah Piala Dunia?",
+      "options": ["Pelé", "Miroslav Klose", "Ronaldo", "Lionel Messi"],
+      "answer": 1
     },
     {
-      "question": "Siapa yang memenangkan Ballon d'Or 2022?",
-      "options": ["Messi", "Lewandowski", "Benzema", "Ronaldo"],
+      "question": "Tim mana yang memenangkan Piala Dunia 2018?",
+      "options": ["Brasil", "Jerman", "Prancis", "Argentina"],
       "answer": 2
     },
     {
-      "question": "Negara manakah yang menjadi juara Piala Dunia 2018?",
-      "options": ["Jerman", "Brasil", "Prancis", "Argentina"],
-      "answer": 2
-    },
-    {
-      "question": "Siapa pencetak gol terbanyak sepanjang masa di Liga Inggris?",
+      "question": "Siapa pemain dengan jumlah gol terbanyak di Liga Inggris?",
       "options": ["Wayne Rooney", "Alan Shearer", "Harry Kane", "Sergio Agüero"],
       "answer": 1
     },
     {
-      "question": "Pemain mana yang dikenal dengan julukan CR7?",
-      "options": ["Cristiano Ronaldo", "Carlos Ruiz", "Claudio Reyna", "Chris Richards"],
-      "answer": 0
-    },
-    {
-      "question": "Klub manakah yang dikenal dengan julukan The Reds?",
-      "options": ["Arsenal", "Liverpool", "Man City", "Bayern Munich"],
+      "question": "Siapa pelatih Real Madrid yang memenangkan 3 kali Liga Champions berturut-turut?",
+      "options": ["José Mourinho", "Zinedine Zidane", "Carlo Ancelotti", "Rafael Benítez"],
       "answer": 1
     },
     {
-      "question": "Siapa pelatih Manchester City tahun 2023?",
-      "options": ["Jose Mourinho", "Jurgen Klopp", "Pep Guardiola", "Carlo Ancelotti"],
+      "question": "Tim mana yang dikenal dengan julukan 'Setan Merah'?",
+      "options": ["Chelsea", "Arsenal", "Manchester United", "Liverpool"],
       "answer": 2
     },
     {
-      "question": "Negara mana yang memenangkan Euro 2020?",
-      "options": ["Italia", "Inggris", "Spanyol", "Jerman"],
+      "question": "Siapa yang memenangkan Ballon d'Or 2021?",
+      "options": ["Lionel Messi", "Robert Lewandowski", "Cristiano Ronaldo", "Jorginho"],
       "answer": 0
     },
     {
-      "question": "Klub Indonesia mana yang dijuluki Maung Bandung?",
-      "options": ["Persija", "Arema", "Persebaya", "Persib"],
-      "answer": 3
+      "question": "Di mana stadion kandang FC Barcelona?",
+      "options": ["Santiago Bernabéu", "Old Trafford", "Camp Nou", "Anfield"],
+      "answer": 2
     },
     {
-      "question": "Siapa pemain sepak bola dengan transfer termahal sepanjang sejarah?",
-      "options": ["Neymar", "Mbappe", "Messi", "Ronaldo"],
-      "answer": 0
-    },
-    {
-      "question": "Siapa yang dijuluki La Pulga?",
-      "options": ["Messi", "Dybala", "Aguero", "Di Maria"],
-      "answer": 0
-    },
-    {
-      "question": "Berapa jumlah pemain dalam satu tim sepak bola?",
-      "options": ["10", "11", "12", "9"],
+      "question": "Siapa yang menjadi kapten Timnas Brasil pada Piala Dunia 2014?",
+      "options": ["Neymar", "Thiago Silva", "Kaka", "Cafu"],
       "answer": 1
     },
     {
-      "question": "Apa nama bola resmi Piala Dunia 2022?",
-      "options": ["Brazuca", "Jabulani", "Al Rihla", "Telstar"],
-      "answer": 2
-    },
-    {
-      "question": "Siapa yang dikenal sebagai Raja Assist di Premier League?",
-      "options": ["De Bruyne", "Ozil", "Fabregas", "Lampard"],
+      "question": "Siapa yang menjadi top scorer Piala Dunia 2014?",
+      "options": ["James Rodríguez", "Lionel Messi", "Thomas Müller", "Neymar"],
       "answer": 0
     },
     {
-      "question": "Stadion Santiago Bernabéu adalah markas klub?",
-      "options": ["Barcelona", "Atletico Madrid", "Real Madrid", "Valencia"],
+      "question": "Siapa yang menjadi manajer Liverpool saat meraih Liga Champions 2019?",
+      "options": ["Jürgen Klopp", "Pep Guardiola", "Antonio Conte", "Mauricio Pochettino"],
+      "answer": 0
+    },
+    {
+      "question": "Apa julukan dari Timnas Argentina?",
+      "options": ["La Furia Roja", "The Three Lions", "Albiceleste", "Les Bleus"],
       "answer": 2
+    },
+    {
+      "question": "Siapa pemain yang dikenal dengan julukan 'The Egyptian King'?",
+      "options": ["Mohamed Salah", "Sadio Mané", "Achraf Hakimi", "Hakim Ziyech"],
+      "answer": 0
+    },
+    {
+      "question": "Pemain manakah yang dikenal dengan gerakan 'La Croqueta'?",
+      "options": ["Cristiano Ronaldo", "Lionel Messi", "Andrés Iniesta", "Dani Alves"],
+      "answer": 2
+    },
+    {
+      "question": "Kapan Piala Dunia pertama kali digelar?",
+      "options": ["1930", "1950", "1966", "1982"],
+      "answer": 0
+    },
+    {
+      "question": "Siapa yang mencetak gol kemenangan bagi Inggris di final Piala Dunia 1966?",
+      "options": ["Bobby Charlton", "Geoff Hurst", "Gary Lineker", "David Beckham"],
+      "answer": 1
     }
   ],
+
   "football_en": [
     {
-      "question": "Which club has the most Champions League titles?",
-      "options": ["Barcelona", "Liverpool", "AC Milan", "Real Madrid"],
-      "answer": 3
+      "question": "Who scored the most goals in World Cup history?",
+      "options": ["Pelé", "Miroslav Klose", "Ronaldo", "Lionel Messi"],
+      "answer": 1
     },
     {
-      "question": "Who won the 2022 Ballon d'Or?",
-      "options": ["Messi", "Lewandowski", "Benzema", "Ronaldo"],
+      "question": "Which team won the 2018 World Cup?",
+      "options": ["Brazil", "Germany", "France", "Argentina"],
       "answer": 2
     },
     {
-      "question": "Which country won the 2018 World Cup?",
-      "options": ["Germany", "Brazil", "France", "Argentina"],
-      "answer": 2
-    },
-    {
-      "question": "Who is the Premier League all-time top scorer?",
+      "question": "Who is the all-time top scorer in the Premier League?",
       "options": ["Wayne Rooney", "Alan Shearer", "Harry Kane", "Sergio Agüero"],
       "answer": 1
     },
     {
-      "question": "Which player is known as CR7?",
-      "options": ["Cristiano Ronaldo", "Carlos Ruiz", "Claudio Reyna", "Chris Richards"],
-      "answer": 0
-    },
-    {
-      "question": "Which club is nicknamed The Reds?",
-      "options": ["Arsenal", "Liverpool", "Man City", "Bayern Munich"],
+      "question": "Which Real Madrid manager won 3 consecutive Champions League titles?",
+      "options": ["José Mourinho", "Zinedine Zidane", "Carlo Ancelotti", "Rafael Benítez"],
       "answer": 1
     },
     {
-      "question": "Who is the manager of Manchester City in 2023?",
-      "options": ["Jose Mourinho", "Jurgen Klopp", "Pep Guardiola", "Carlo Ancelotti"],
+      "question": "Which team is known as 'The Red Devils'?",
+      "options": ["Chelsea", "Arsenal", "Manchester United", "Liverpool"],
       "answer": 2
     },
     {
-      "question": "Which country won Euro 2020?",
-      "options": ["Italy", "England", "Spain", "Germany"],
+      "question": "Who won the Ballon d'Or in 2021?",
+      "options": ["Lionel Messi", "Robert Lewandowski", "Cristiano Ronaldo", "Jorginho"],
       "answer": 0
     },
     {
-      "question": "Which Indonesian club is called Maung Bandung?",
-      "options": ["Persija", "Arema", "Persebaya", "Persib"],
-      "answer": 3
+      "question": "Where is FC Barcelona's home stadium?",
+      "options": ["Santiago Bernabéu", "Old Trafford", "Camp Nou", "Anfield"],
+      "answer": 2
     },
     {
-      "question": "Who is the most expensive football transfer ever?",
-      "options": ["Neymar", "Mbappe", "Messi", "Ronaldo"],
-      "answer": 0
-    },
-    {
-      "question": "Who is known as La Pulga?",
-      "options": ["Messi", "Dybala", "Aguero", "Di Maria"],
-      "answer": 0
-    },
-    {
-      "question": "How many players are there in a football team?",
-      "options": ["10", "11", "12", "9"],
+      "question": "Who was the captain of Brazil during the 2014 World Cup?",
+      "options": ["Neymar", "Thiago Silva", "Kaka", "Cafu"],
       "answer": 1
     },
     {
-      "question": "What is the name of the official 2022 World Cup ball?",
-      "options": ["Brazuca", "Jabulani", "Al Rihla", "Telstar"],
-      "answer": 2
-    },
-    {
-      "question": "Who is known as the assist king in the Premier League?",
-      "options": ["De Bruyne", "Ozil", "Fabregas", "Lampard"],
+      "question": "Who was the top scorer in the 2014 World Cup?",
+      "options": ["James Rodríguez", "Lionel Messi", "Thomas Müller", "Neymar"],
       "answer": 0
     },
     {
-      "question": "Santiago Bernabéu is the home stadium of which club?",
-      "options": ["Barcelona", "Atletico Madrid", "Real Madrid", "Valencia"],
+      "question": "Who was the manager of Liverpool when they won the 2019 Champions League?",
+      "options": ["Jürgen Klopp", "Pep Guardiola", "Antonio Conte", "Mauricio Pochettino"],
+      "answer": 0
+    },
+    {
+      "question": "What is the nickname of the Argentina national team?",
+      "options": ["La Furia Roja", "The Three Lions", "Albiceleste", "Les Bleus"],
       "answer": 2
+    },
+    {
+      "question": "Who is known as 'The Egyptian King'?",
+      "options": ["Mohamed Salah", "Sadio Mané", "Achraf Hakimi", "Hakim Ziyech"],
+      "answer": 0
+    },
+    {
+      "question": "Which player is famous for the 'La Croqueta' move?",
+      "options": ["Cristiano Ronaldo", "Lionel Messi", "Andrés Iniesta", "Dani Alves"],
+      "answer": 2
+    },
+    {
+      "question": "When was the first World Cup held?",
+      "options": ["1930", "1950", "1966", "1982"],
+      "answer": 0
+    },
+    {
+      "question": "Who scored the winning goal for England in the 1966 World Cup final?",
+      "options": ["Bobby Charlton", "Geoff Hurst", "Gary Lineker", "David Beckham"],
+      "answer": 1
     }
   ]
 }
