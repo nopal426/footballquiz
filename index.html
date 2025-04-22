@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Football Quiz Game</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container" id="loginScreen">
-    <h2>Football Quiz</h2>
-    <input type="text" id="playerName" placeholder="Enter your name" />
-    <select id="category">
-      <option value="football">Football</option>
-    </select>
-    <select id="language">
-      <option value="id">Bahasa Indonesia</option>
-      <option value="en">English</option>
-    </select>
-    <button onclick="startQuiz()">Start</button>
-  </div>
-
-  <div class="container" id="quizScreen" style="display:none;">
-    <div id="timer">Time: 15</div>
-    <div id="question" class="question"></div>
-    <div id="options"></div>
-    <div class="nav-buttons">
-      <button onclick="prevQuestion()" id="btnBack">Back</button>
-      <button onclick="nextQuestion()" id="btnNext">Next</button>
+    <div class="main-container">
+        <div id="quiz-container">
+            <h1 id="question"></h1>
+            <div id="options"></div>
+        </div>
+        <div id="score-container" style="display: none;">
+            <h1 id="score"></h1>
+        </div>
     </div>
-  </div>
-
-  <div class="container" id="resultScreen" style="display:none;">
-    <h2 id="resultTitle">Quiz Finished!</h2>
-    <p id="score"></p>
-    <button onclick="restartQuiz()" id="btnRestart">Play Again</button>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
